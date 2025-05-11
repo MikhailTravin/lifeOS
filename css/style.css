@@ -946,6 +946,11 @@ body {
   left: 20px;
 }
 
+.live__arrow4 img {
+  width: 100%;
+  height: 100%;
+}
+
 .live__arrow5 {
   position: absolute;
   top: -26px;
@@ -1630,10 +1635,6 @@ body {
   margin: 0px 0px 18px 0px;
 }
 
-.bottom-plan__column:nth-child(2) .bottom-plan__bg {
-  top: 30px;
-}
-
 .bottom-plan__column p {
   font-family: var(--second-family);
   font-weight: 400;
@@ -1654,6 +1655,9 @@ body {
 
 .bottom-plan__bg {
   position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 100%;
 }
 
 .bottom-plan__title {
@@ -2374,6 +2378,11 @@ body {
     left: -45px;
   }
 
+  .live__arrow4 img {
+    width: auto;
+    height: 160px;
+  }
+
   .live__arrow5 {
     display: none;
   }
@@ -2390,6 +2399,7 @@ body {
 
   .live__smile {
     height: 86px;
+    width: 77px;
     top: 67%;
     right: -25px;
   }
@@ -2450,11 +2460,13 @@ body {
     top: -17px;
     left: -25px;
     height: 50px;
+    width: 49px;
   }
 
   .look__list ul li:nth-child(5) .look__number img {
     top: -15px;
     left: -25px;
+    width: 50px;
     height: 52px;
   }
 
@@ -2472,7 +2484,7 @@ body {
   }
 
   .look__number img {
-    width: auto;
+    width: 70px;
     height: 68px;
     top: -25px;
     left: -25px;
@@ -2486,7 +2498,18 @@ body {
   }
 
   .look__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 360px;
+    height: 123px;
     margin: 20px 0px 0px 0px;
+  }
+
+  .look__button .button__hover {
+    width: 390px;
+    left: -17px;
+    top: -20px;
   }
 
   .plan {
@@ -3060,6 +3083,10 @@ body {
     top: -40px;
   }
 
+  .bottom-plan__bg {
+    height: calc(100% + 50px);
+  }
+
   .subscription-plan__title img {
     left: -20px;
   }
@@ -3085,15 +3112,39 @@ body {
 
   .about__button span {
     font-size: 16px;
-    padding: 22px 25px;
+    height: 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .about__button span img {
     height: 35px;
   }
 
+  .about__bg {
+    height: 95px;
+  }
+
   .live__karakul {
     right: -45px;
+  }
+
+  .look__button {
+    max-width: 300px;
+  }
+
+  .look__button .button__hover {
+    width: 320px;
+    height: 170px;
+    left: -10px;
+    top: -20px;
   }
 
   .plan__column:nth-child(3) .plan__icon {
