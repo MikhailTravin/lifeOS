@@ -3083,7 +3083,12 @@ body {
     top: -40px;
   }
 
+  .bottom-plan__column:nth-child(2) .bottom-plan__bg {
+    top: 30px;
+  }
+
   .bottom-plan__bg {
+    top: 0px;
     height: calc(100% + 50px);
   }
 
