@@ -460,7 +460,6 @@ body {
   height: auto;
   width: 100%;
   z-index: 2;
-  min-height: 120px;
   -webkit-transform: rotate(1deg);
       -ms-transform: rotate(1deg);
           transform: rotate(1deg);
@@ -3048,10 +3047,7 @@ body {
   }
 
   .main-home__rips {
-    -webkit-transform: rotate(1deg);
-        -ms-transform: rotate(1deg);
-            transform: rotate(1deg);
-    bottom: -20px;
+    bottom: -5px;
   }
 
   .plan__column:nth-child(3) .plan__line {
@@ -3066,15 +3062,6 @@ body {
 
   .subscription-plan__title img {
     left: -20px;
-  }
-}
-
-@media (max-width: 400px) {
-  .main-home__rips {
-    -webkit-transform: rotate(-3deg);
-        -ms-transform: rotate(-3deg);
-            transform: rotate(-3deg);
-    bottom: -22px;
   }
 }
 
