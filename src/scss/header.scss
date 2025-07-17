@@ -1,0 +1,56 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	// .header__bg
+
+	&__bg {
+		position: absolute;
+		height: 126px;
+		width: 100%;
+		@media (max-width: 1460px) {
+			object-fit: cover;
+		}
+		@media (max-width: $pc) {
+			height: 80px;
+		}
+	}
+
+	// .header__container
+
+	&__container {
+		position: relative;
+		max-width: 1410px;
+	}
+
+	// .header__line
+
+	&__line {
+		position: absolute;
+		height: 88px;
+		width: calc(100% + 5px);
+		top: 0;
+		left: -5px;
+		@media (max-width: $pc) {
+			height: 55px;
+			width: 100%;
+			left: -15px;
+		}
+	}
+
+	// .header__logo
+
+	&__logo {
+		margin: 15px 0px 0px 80px;
+		display: block;
+		@media (max-width: $tablet) {
+			display: none;
+		}
+		img {
+			height: 55px;
+			width: auto;
+		}
+	}
+}

@@ -1,0 +1,107 @@
+.footer {
+    background: #061f3b;
+    padding: 34px 0px 23px 0px;
+    @media (max-width: $pc) {
+        padding: 31px 0px;
+    }
+    // .footer__container
+
+    &__container {
+    }
+
+    // .footer__content
+
+    &__content {
+        padding: 0px 0px 0px 90px;
+        @media (max-width: $pc) {
+            padding: 0px 0px 0px 18px;
+        }
+    }
+
+    // .footer__top
+
+    &__top {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: rgba(197, 216, 255, 0.92);
+        max-width: 579px;
+        @media (max-width: $pc) {
+            font-size: 10px;
+        }
+        @media (max-width: $mobileSmall) {
+            max-width: 280px;
+        }
+        p {
+            margin: 0px 0px 10px 0px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            @media (max-width: $pc) {
+                gap: 5px;
+            }
+            li {
+                display: flex;
+                &::before {
+                    content: "";
+                    width: 3px;
+                    height: 3px;
+                    flex: 0 0 3px;
+                    background-color: rgba(197, 216, 255, 0.92);
+                    border-radius: 50%;
+                    margin: 9px 7px 0px 8px;
+                    @media (max-width: $pc) {
+                        margin: 4px 10px 0px 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    // .footer__center
+
+    &__center {
+        display: flex;
+        flex-direction: column;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #86d3e4;
+        transition: opacity 0.3s ease 0s;
+        gap: 12px;
+        padding: 20px 0px 20px 170px;
+        @media (max-width: $pc) {
+            padding: 25px 0px 25px 0px;
+            font-size: 10px;
+            gap: 10px;
+        }
+        a {
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    // .footer__bottom
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 50px;
+        margin: 0px -25px 0px 0px;
+        @media (max-width: $pc) {
+            margin: 0px 0px 0px 0px;
+            justify-content: center;
+            gap: 45px;
+        }
+    }
+
+    // .footer__image
+
+    &__image {
+    }
+}

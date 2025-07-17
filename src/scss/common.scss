@@ -1,0 +1,28 @@
+.title2 {
+    position: relative;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 87%;
+    text-align: center;
+    color: #062149;
+    margin: 0px 0px 45px 0px;
+    @media (max-width: $pc) {
+        line-height: 106%;
+        margin: 0px 0px 25px 0px;
+    }
+    img {
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        width: 441px;
+        height: 16px;
+        @media (max-width: $pc) {
+            width: 279px;
+            height: 10px;
+            bottom: -8px;
+        }
+    }
+}
+
+

@@ -1,0 +1,53 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 107%;
+	color: #2a3a03;
+	width: 408px;
+	height: 128px;
+	margin: 0 auto;
+	@media (max-width: $pc) {
+		width: 391px;
+		height: 123px;
+		margin: 25px 0px 0px -20px;
+	}
+	span {
+		position: relative;
+		z-index: 10;
+	}
+	img {
+		transition: opacity 0.3s ease 0s;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.button__hover {
+		opacity: 0;
+		width: 440px;
+		height: 170px;
+		left: -20px;
+		top: -15px;
+	}
+	.button__pressed {
+		opacity: 0;
+	}
+	&:hover {
+		.button__normal {
+			opacity: 0;
+		}
+		.button__hover {
+			opacity: 1;
+		}
+	}
+}
